@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Matrix
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math-Matrix perl module
 Summary(pl):	Modu³ perla Math-Matrix
 Name:		perl-Math-Matrix
 Version:	0.4
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Math-Matrix perl module.
 Modu³ perla Math-Matrix.
 
 %prep
-%setup -q -n Math-Matrix-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
