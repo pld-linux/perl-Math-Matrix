@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Matrix
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ Perla Math::Matrix - mno¿enie i odwracanie macierzy
 Name:		perl-Math-Matrix
 Version:	0.4
 Release:	6
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fad8f822e5e417ff12ccc2205eda206a
@@ -28,6 +33,8 @@ Modu³ Math::Matrix - mno¿±cy i odwracaj±cy macierze.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
