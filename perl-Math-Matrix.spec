@@ -2,8 +2,8 @@
 Summary:	Math-Matrix perl module
 Summary(pl):	Modu³ perla Math-Matrix
 Name:		perl-Math-Matrix
-Version:	0.3
-Release:	2
+Version:	0.4
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
