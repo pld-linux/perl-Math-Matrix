@@ -26,7 +26,7 @@ Modu³ Math::Matrix - mno¿±cy i odwracaj±cy macierze.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
