@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Matrix
+%define		pdir	Math
+%define		pnam	Matrix
 Summary:	Math::Matrix Perl module - multiply and invert matrices
 Summary(pl):	Modu³ Perla Math::Matrix - mno¿enie i odwracanie macierzy
 Name:		perl-Math-Matrix
