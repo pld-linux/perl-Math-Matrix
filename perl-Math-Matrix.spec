@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Matrix
-Summary:	Math::Matrix perl module
-Summary(pl):	Modu³ perla Math::Matrix
+Summary:	Math::Matrix - Multiply and invert Matrices
 Name:		perl-Math-Matrix
 Version:	0.4
 Release:	3
@@ -15,10 +14,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Math::Matrix perl module.
-
-%description -l pl
-Modu³ perla Math::Matrix.
+Math::Matrix - Multiply and invert Matrices.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -31,13 +27,12 @@ perl Makefile.PL
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %{perl_sitelib}/Math/Matrix.pm
 %{_mandir}/man3/*
