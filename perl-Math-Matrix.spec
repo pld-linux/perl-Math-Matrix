@@ -1,20 +1,24 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Matrix
-Summary:	Math::Matrix - Multiply and invert Matrices
+Summary:	Math::Matrix Perl module - Multiply and invert Matrices
+Summary(pl):	Modu³ Perla Math::Matrix - mno¿±cy i odwracaj±cy macierze
 Name:		perl-Math-Matrix
 Version:	0.4
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Math::Matrix - Multiply and invert Matrices.
+
+%description -l pl
+Modu³ Math::Matrix - mno¿±cy i odwracaj±cy macierze.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
