@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Matrix
-Summary:	Math-Matrix perl module
-Summary(pl):	Modu³ perla Math-Matrix
+Summary:	Math::Matrix perl module
+Summary(pl):	Modu³ perla Math::Matrix
 Name:		perl-Math-Matrix
 Version:	0.4
 Release:	3
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Math-Matrix perl module.
+Math::Matrix perl module.
 
 %description -l pl
-Modu³ perla Math-Matrix.
+Modu³ perla Math::Matrix.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
