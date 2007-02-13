@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Matrix
 Summary:	Math::Matrix Perl module - multiply and invert matrices
-Summary(pl.UTF-8):   Moduł Perla Math::Matrix - mnożenie i odwracanie macierzy
+Summary(pl.UTF-8):	Moduł Perla Math::Matrix - mnożenie i odwracanie macierzy
 Name:		perl-Math-Matrix
 Version:	0.4
 Release:	7
