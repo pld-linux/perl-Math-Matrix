@@ -8,7 +8,7 @@ Summary:	Math::Matrix Perl module - multiply and invert matrices
 Summary(pl.UTF-8):	Moduł Perla Math::Matrix - mnożenie i odwracanie macierzy
 Name:		perl-Math-Matrix
 Version:	0.5
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
